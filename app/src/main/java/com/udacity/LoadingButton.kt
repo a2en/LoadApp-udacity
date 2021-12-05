@@ -76,6 +76,7 @@ class LoadingButton @JvmOverloads constructor(
 
             try {
                 buttonText = getString(R.styleable.LoadingButton_text).toString()
+                buttonBackgroundColor = getColor(R.styleable.LoadingButton_buttonBackgroundColor, context.getColor(R.color.colorPrimary));
             } finally {
                 recycle()
             }
