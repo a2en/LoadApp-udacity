@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".DetailActivity"
+    tools:showIn="@layout/activity_detail">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="File name : "
+        android:layout_marginTop="48dp"
+        android:layout_marginStart="24dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/repo_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        app:layout_constraintBottom_toBottomOf="@+id/textView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView"
+        app:layout_constraintTop_toTopOf="@+id/textView"
+        tools:text="@string/glide_radio" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Status : "
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="24dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <TextView
+        android:id="@+id/status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        app:layout_constraintBottom_toBottomOf="@+id/textView2"
+        app:layout_constraintStart_toStartOf="@+id/repo_name"
+        app:layout_constraintTop_toTopOf="@+id/textView2"
+        tools:text="Success" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
