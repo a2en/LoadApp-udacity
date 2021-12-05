@@ -40,7 +40,7 @@ class LoadingButton @JvmOverloads constructor(
             ButtonState.Loading -> {
                 buttonText = resources.getString(R.string.button_loading)
                 valueAnimator = ValueAnimator.ofFloat(0f, widthSize.toFloat())
-                valueAnimator.duration = 5000
+                valueAnimator.duration = 3000
                 valueAnimator.addUpdateListener { animation ->
                     progressWidth = animation.animatedValue as Float
                     progressCircle = (widthSize.toFloat()/365)*progressWidth
