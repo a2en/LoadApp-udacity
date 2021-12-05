@@ -17,4 +17,5 @@
     <string name="glide">Glide Repository</string>
     <string name="select_file">Please select the file to download</string>
     <string name="download">Download</string>
+    <string name="ok" >OK</string>
 </resources>

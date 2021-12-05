@@ -18,7 +18,7 @@ class DetailActivity : AppCompatActivity() {
         repo_name.text = repoName
         status.text = statusText
 
-        fab.setOnClickListener {
+        back.setOnClickListener {
             startActivity(Intent(this, MainActivity::class.java))
             finishAffinity()
         }
